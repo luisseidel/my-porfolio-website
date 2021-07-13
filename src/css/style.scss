@@ -1,0 +1,43 @@
+@import './cores';
+@import './tipografia';
+@import './spacing';
+@import './layout';
+@import './menu';
+@import './social';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: $black-dark $black-light;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $black-dark;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $white-light;
+        border-radius: 20px;
+        border: 3px solid $black-dark;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: $white-light;
+}
+
+.menu-logo {
+    img {
+        max-width: 130px;
+    }
+}

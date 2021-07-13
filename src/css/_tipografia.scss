@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&display=swap");
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+}
+
+p, a, i, svg {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: $black-light;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+b, strong {
+    font-family: "Open Sans", sans-serif;
+    color: $black-medium;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+h1 { font-size: 72px; color: $black-dark; line-height: 105%; }
+h2 { font-size: 56px; color: $black-dark; line-height: 110%; }
+h3 { font-size: 40px; color: $black-medium; line-height: 120%; }
+h4 { font-size: 32px; color: $black-medium; line-height: 130%; }
+h5 { font-size: 24px; color: $black-regular; line-height: 140%; }
+h6 { font-size: 18px; color: $black-regular; line-height: 150%; }
+
+$animate: all 0.2s ease-in-out;
+.menu {
+    a {
+        padding: 8px 24px;
+        .hover {
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+            transition: $animate;
+            position: relative;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                width: 0px;
+                height: 5px;
+                margin: 5px 0 0;
+                transition: $animate;
+                transition-duration: 0.75s;
+                opacity: 0;
+                background-color: darken($indigo-light, 5%);
+            }
+            &.hover-1 {
+                &:before,
+                &:after {
+                    left: 0;
+                }
+            }
+            &.hover-2 {
+                &:before,
+                &:after {
+                    right: 0;
+                }
+            }
+            &.hover-3 {
+                &:before {
+                    left: 50%;
+                }
+                &:after {
+                    right: 50%;
+                }
+            }
+            &.hover-4 {
+                &:before {
+                    left: 0;
+                }
+                &:after {
+                    right: 0;
+                }
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            .hover {
+                &:before,
+                &:after {
+                    width: 100%;
+                    opacity: 1;
+                }
+                &.hover-3,
+                &.hover-4 {
+                    &:before,
+                    &:after {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mask {
+    background: linear-gradient(90deg, rgba(53,0,90,1) 0%, rgba(105,0,180,1) 35%, rgba(198,118,255,1) 100%);    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.square {
+    display: inline-block;
+    margin-top: 64px;
+    padding: 16px 24px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+
+        height: 120px;
+        width: 120px;
+
+        transform: translate(0, -25%) rotate(45deg);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        border-radius: 6px;
+        transition: ease-in-out .5s;
+
+        background: linear-gradient(90deg, rgba(53,0,90,1) 0%, rgba(105,0,180,1) 35%, rgba(198,118,255,1) 100%);    }
+
+    &:hover {
+        &::after {
+            transform: translate(0, -25%) rotate(60deg);
+        }
+    }
+
+    a {
+        width: 100%;
+        height: 100%;
+        color: $white-light;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.white-txt {
+    color: $white-light;
+}
+
+@media screen and (max-width: 768px) {
+    h1 { font-size: 48px; color: $black-dark; }
+    h2 { font-size: 40px; color: $black-dark; }
+    h3 { font-size: 36px; color: $black-medium; }
+    h4 { font-size: 24px; color: $black-medium; }
+    h5 { font-size: 22px; color: $black-regular; }
+    h6 { font-size: 18px; color: $black-regular; }
+}
