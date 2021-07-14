@@ -70,6 +70,7 @@
     <li>Form de Contato</li>
     <li>Criar seção sobre</li>
     <li>Melhorar Foto</li>
+    <li>Menu Mobile</li>
     <li>Adicionar outros trabalhos</li>
 </ul>
 
