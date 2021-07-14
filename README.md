@@ -13,8 +13,10 @@
     <a href="#-link-links-">Links</a>
 </p>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/534b16de-6a78-4432-817c-4ed960299946/deploy-status)](https://app.netlify.com/sites/luisseidel/deploys)
 
 <hr>
+
 <h2 id="proposito" align="center"> :dart: Propósito e Funcionamento</h2>
 
 <p>
@@ -62,7 +64,14 @@
 </div>
 </details>
 
+<h2> :clipboard: To-do</h2>
+
+<ul>
+    <li>Readme :heavy_check_mark:</li>
+    <li>Form de Contato</li>
+    <li>Criar seção sobre</li>
+    <li>Melhorar Foto</li>
+    <li>Adicionar outros trabalhos</li>
+</ul>
 
 <h2> :link: Links </h2>
-
-
