@@ -75,3 +75,5 @@
 </ul>
 
 <h2> :link: Links </h2>
+
+Deployed App: https://luisseidel.netlify.app/
