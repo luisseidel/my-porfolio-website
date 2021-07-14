@@ -20,11 +20,10 @@
 <h2 id="proposito" align="center"> :dart: Propósito e Funcionamento</h2>
 
 <p>
-    Este projeto foi desenvolvido durante o evento Front Week da Alura, como portfólio um website de portfólio.
+    Este projeto é um site de portfólio.
 </p>
 
 <hr>
-
 
 <hr>
 
@@ -59,8 +58,8 @@
 
 
 <div>
-    <img src="./src/assets/images/letmeask-white.png">
-    <img src="./src/assets/images/letmeask-dark.png">
+    <img src="./src/assets/images/01.png">
+    <img src="./src/assets/images/02.png">
 </div>
 </details>
 
